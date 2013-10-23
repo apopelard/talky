@@ -1,0 +1,77 @@
+<div class="container">
+    <p></p>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h1>Submit your new story</h1>
+      </div>
+    <div class="panel-body">
+       <div class="container">
+     <div class="row">
+      <div class="col-md-6">
+        <h4>Input the story details</h4>
+        <div>&nbsp;</div>
+        <form role="form">
+            <div class="form-group">
+              <label for="exampleInputFile">Story</label>
+              <div>
+                <button type="button" class="btn btn-danger btn-sm">
+                <span class="glyphicon glyphicon-record"></span>  &nbsp;Record audio</button>
+              </div>
+              <p></p>
+              <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                <span class="sr-only">80% Complete (danger)</span>
+                </div>
+              </div>
+              <p></p>
+              <p>&nbsp;&nbsp;&nbsp;OR</p>
+              <p></p>
+              <input type="file" id="exampleInputFile">
+              <p class="help-block">Select the audio file you want to submit.</p>
+            </div>
+          <div class="form-group">
+            <label for="inputTitle">Story Title</label>
+            <input type="text" class="form-control" id="inputTitle" placeholder="Your story title">
+          </div>
+          <div class="form-group">
+            <label for="inputDescription">Story Description</label>
+            <textarea class="form-control" id="inputDescription" rows="3" placeholder="Your story description"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="">Location</label>
+          </div>
+          <div class="form-group">
+            <label for="inputStreet1" class="col-md-2 control-label">Address</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="inputStreet1" placeholder="Address">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputStreet2" class="col-md-2 control-label">Address</label>
+            <div class="col-md-10">
+              <input type="text" class="form-control" id="inputStreet2" placeholder="Address">
+              <p></p>
+            </div>
+          </div>
+          <div class="form-group">
+              <label for="exampleInputFile">Add Picture <small>(optional)</small></label>
+              <input type="file" id="pictureFile">
+            </div>
+          <div>&nbsp;</div>
+          <p class="text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </p>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h4>Click to set story location</h4>
+        <div style="width:500px;height:500px" id="map-canvas"></div>
+      </div>
+    </div>
+    <div class="row">
+
+    </div>
+  </div>
+    </div>
+  </div>
+  </div>
