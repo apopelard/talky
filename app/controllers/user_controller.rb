@@ -1,6 +1,8 @@
 class UserController < ApplicationController
   def profile_page
-    @title = "User's Profile"
+    @profile = User.find_by({:username => params[:name]})
+    @user_stories = Story.find_by({:user_id => @profile["id"]})
+    @title = "#{@profile["first_name"]}'s Profile"
     render("profile_page")
   end
 end
