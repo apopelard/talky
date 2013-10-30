@@ -47,19 +47,20 @@
         <h3>Storyfeed</h3>
       </p>
       <div class="list-group">
-
-  <a href="<%= @user_stories["audio_url"]%>" class='list-group-item'>
-  <p>
-  <h5><b><%= @user_stories["name"]%></b></h5>
-  </p>
-  <p>
-    <%= @user_stories["description"]%>
-  </p>
-  <p>
-    <img height="150" width="150" src="<%= @user_stories["picture_url"] %>" class="img-thumbnail">
-  </p>
-  </a>
- </div>
+        <% @user_stories.each do |story| %>
+        <a href="<%= story.audio_url %>" class='list-group-item'>
+        <p>
+          <h5><b><%= story.name %></b></h5>
+        </p>
+        <p>
+          <%= story.description %>
+        </p>
+        <p>
+          <img height="150" width="150" src="<%= story.picture_url %>" class="img-thumbnail">
+        </p>
+        </a>
+        <% end %>
+      </div>
    </div>
 
 </div>

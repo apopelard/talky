@@ -1,0 +1,23 @@
+<p>
+  <h1>Users</h1>
+  <ul>
+    <%@users.each do |user|%>
+    <li>
+      <a href="/profile/<%=user.username%>">
+        <%=user.first_name%> <%=user.last_name%>'s profile (<%=user.username%>)
+      </a>
+    </li>
+    <%end%>
+  </ul>
+</p>
+
+<p>
+  <h1>Stories</h1>
+  <ul>
+    <%@stories.each do |story|%>
+    <li>
+      <%=story.name%>
+    </li>
+    <%end%>
+  </ul>
+</p>
